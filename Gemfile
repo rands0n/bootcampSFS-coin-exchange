@@ -13,6 +13,7 @@ gem 'puma', '~> 3.0'
 # gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'jbuilder', '~> 2.5'
+gem 'rest-client'
 
 # front end
 gem 'sass-rails', '~> 5.0'
