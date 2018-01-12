@@ -7,6 +7,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+
 # back end
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
@@ -19,6 +23,10 @@ gem 'rest-client'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'coffee-rails', '~> 4.2'
+gem 'turbolinks', '~> 5'
+gem 'jquery-rails'
+gem 'autoprefixer-rails', '~> 7.2', '>= 7.2.5'
 
 # gem 'capistrano-rails', group: :development
 

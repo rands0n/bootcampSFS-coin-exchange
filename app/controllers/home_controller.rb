@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   end
 
   def exchange
+    debugger
     value = Currency::exchange(
       params[:currency],
       params[:currency_location],
