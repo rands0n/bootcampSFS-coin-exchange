@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CoinExchange</title>
-    <%= csrf_meta_tags %>
+<head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <title>CoinExchange</title>
 
-  <body>
-    <%= yield %>
-  </body>
+  <!-- Meta -->
+  <%= csrf_meta_tags %>
+
+  <!-- Favicon -->
+  <%= favicon_link_tag '/favicon.ico' %>
+
+  <!-- Stylesheets -->
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
+<body>
+  <%= yield %>
+
+  <!-- Javascript -->
+  <%= javascript_include_tag 'application' %>
+</body>
 </html>
